@@ -13,7 +13,7 @@ export const ROUTES: RouteInfo[] = [
     {path: '/dashboard/', title: 'Db Dashboard', icon: '', class: ''},
     {path: '/user-profile', title: 'Db Profiles', icon: '', class: ''},
     {path: '/table-list', title: 'Db Monitoring Tables', icon: '', class: ''},
-
+    {path: '/query', title: 'ExecQueryforOracle', icon: '', class: ''},
 ];
 
 @Component({

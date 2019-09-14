@@ -12,6 +12,7 @@ import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { QueryComponent } from '../../query/query.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import {
   MatButtonModule,
@@ -33,6 +34,7 @@ import {
     MatInputModule,
     MatSelectModule,
     MatTooltipModule,
+    HttpClientModule
   ],
   declarations: [
     DashboardComponent,

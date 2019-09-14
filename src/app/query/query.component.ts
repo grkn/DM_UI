@@ -8,7 +8,8 @@ import { OracleQueryService } from './service/oracle-query.service';
 })
 export class QueryComponent implements OnInit {
 
-  query: string;
+  queryString: string;
+  result: any[];
 
   constructor(private oracleQuery: OracleQueryService) { }
 
@@ -17,7 +18,7 @@ export class QueryComponent implements OnInit {
   }
 
   query() {
-    this.oracleQuery.query(this.query);
+    this.oracleQuery.query(this.queryString).subscribe(res => this.result = res);
   }
 
 }

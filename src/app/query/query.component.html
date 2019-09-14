@@ -2,8 +2,12 @@
     <div class="col-md-12">
       <label>Query</label>
       <mat-form-field class="example-full-width">
-         <textarea matInput placeholder="Database Queries" [(ngModel)]="query"></textarea>
+         <textarea matInput placeholder="Database Queries" [(ngModel)]="queryString"></textarea>
+
        </mat-form-field>
        <button mat-flat-button color="primary" (click)="query()">Query</button>
     </div>
+</div>
+<div *ngFor="let r of result" style="margin-top:20px">
+  {{r | json}}
 </div>
